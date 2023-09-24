@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> JavaScript Work</title>
+        <link rel="stylesheet" href="./Style.css">
+    </head>
+     <body>
+       <h1>Count string</h1>
+      <script>
+
+        var a = prompt("Enter any String");
+
+        function count_vowel(string)
+        {
+            var vowels = "aAeEIiOoUu";
+            var count = 0;
+
+            for(var i=0; i< string.length;i++)
+            {
+                if(vowels.indexOf(string[i])!==-1)
+                {
+
+                count += 1;
+            }
+        }
+        return count;
+    }
+    console.log(count_vowel(a));
+
+      </script>
+     </body>
+</html>
